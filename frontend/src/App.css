@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Container layout */
+.container {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Full width */
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  /* Left image section */
+  .imageSection {
+    flex: 1; /* Take up 50% of the width */
+    overflow: hidden; /* Ensures the image stays within the bounds */
   }
-  to {
-    transform: rotate(360deg);
+  
+  .imageSection img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Scales the image proportionally */
   }
-}
+  
+  /* Right content section */
+  .contentSection {
+    flex: 1; /* Take up 50% of the width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem; /* Adds spacing inside the content */
+    background-color: #f9f9f9; /* Light background */
+  }
+  
+  .contentSection h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem; /* Space below heading */
+  }
+  
+  .contentSection p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 2rem;
+  }
+  
+  .contentSection a {
+    color: #b643ff;
+    text-decoration: underline;
+  }
+  
+  /* Button group styling */
+  .buttonGroup {
+    display: flex;
+    gap: 1rem; /* Space between buttons */
+  }
+  
+  .primaryButton {
+    padding: 0.8rem 1.5rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 4px;
+  }
+  
+  .secondaryButton {
+    padding: 0.8rem 1.5rem;
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 4px;
+  }
+  
