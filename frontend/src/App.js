@@ -2,7 +2,9 @@ import React from "react";
 import "./App.css";
 import world from "./images.jpeg";
 
+
 function App() {
+
   return (
     <main className="container">
       <div className="imageSection">
