@@ -4,12 +4,15 @@ import './index.css';
 import App from './App';
 import Nav from './components/Nav'
 import reportWebVitals from './reportWebVitals';
+import Footer from './components/Footer';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <div>
     <Nav/>
     <App />
+    <Footer/>
   </div>
 );
 

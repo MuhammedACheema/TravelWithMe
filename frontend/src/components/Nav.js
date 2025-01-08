@@ -1,19 +1,18 @@
 import React from "react";
-import Home from "../App"
-function Navbar() {
-    return (
-        <header>
-            <nav>
-                <ul>
-                    <a href = "../App.js" >Home</a>
-                    <a href = "./Foryou.js">For You</a>
-                    <a href = "#">Explore</a>
-                    <a href = "#">My Profile</a>
-                    <a href = "#">About Us</a>
-                </ul>
-            </nav>
-        </header>
-    );
-}
+import "../styles/Nav.css";
 
-export default Navbar
+const Navbar = () => {
+  return (
+    <nav className="navbar">
+      <ul className="navbar-list">
+        <li><a href="#" className="navbar-link">Home</a></li>
+        <li><a href="#" className="navbar-link">For You</a></li>
+        <li><a href="#" className="navbar-link">Explore</a></li>
+        <li><a href="#" className="navbar-link">My Profile</a></li>
+        <li><a href="#" className="navbar-link">About Us</a></li>
+      </ul>
+    </nav>
+  );
+};
+
+export default Navbar;

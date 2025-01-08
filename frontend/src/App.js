@@ -1,6 +1,7 @@
 import React from "react";
-import "./App.css";
-import world from "./images.jpeg";
+import "./styles/App.css";
+import world from "./images/images.jpeg";
+import flat from "./images/flat.jpeg"
 
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
   return (
     <main className="container">
       <div className="imageSection">
+        <img src={flat} alt="World scenery" />
         <img src={world} alt="World scenery" />
       </div>
       <div className="contentSection">
